@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weatharia</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Weatharia</h1>
+  <input type="text" name="location" id="location">
+  <button id="q">Search</button><br><br>
+  <div class="change-buttons">
+    <button id="scale">Metric</button>
+    <button id="view-all">All</button>
+    <button id="view-default">Default</button>
+  </div><br><br>
+  <div class="table-container">
+    <h2></h2>
+    <table id="weather">
+      <thead>
+        <tr>
+          <th class="datetime">Date</th>
+          <th class="tempmax hidden">Maximum Temp.</th>
+          <th class="tempmin hidden">Minimum Temp.</th>
+          <th class="temp">Temperature</th>
+          <th class="feelslikemax hidden">Feels like Max</th>
+          <th class="feelslikemin hidden">Feels like Min</th>
+          <th class="feelslike hidden">Feels like</th>
+          <th class="humidity hidden">Humidity</th>
+          <th class="precip hidden">Precipitations</th>
+          <th class="precipprob">Precip. Chance</th>
+          <th class="preciptype hidden">Precip. Type</th>
+          <th class="snow hidden">Snow</th>
+          <th class="snowdepth hidden">Snow Depth</th>
+          <th class="conditions">Conditions</th>
+          <th class="description hidden">Description</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

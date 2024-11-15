@@ -1,0 +1,42 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.table-container {
+  display: flex;
+  justify-content: center;
+}
+
+table, thead, th, td {
+  border: 1px solid black;
+}
+
+thead, th, td {
+  padding: 0.5em;
+}
+
+.sunny {
+  background-color: #ffff00;
+}
+
+.partially-cloudy {
+  background-color: lightgray;
+}
+
+.cloudy {
+  background-color: gray;
+}
+
+.rainy {
+  background-color: lightblue;
+}
+
+.snowy {
+  background-color: white;
+}
