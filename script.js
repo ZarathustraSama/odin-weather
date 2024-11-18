@@ -27,9 +27,12 @@ const lengthValues = [
 ]
 
 async function getWeatherData(location) {
+  const p = document.getElementById("now-loading");
+  p.classList.toggle("hidden");
   try {
     const response = await fetch(`https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/${location}?unitGroup=us&key=${weatherKey}&contentType=json`);
     const data = await response.json();
+    p.classList.toggle("hidden");
     return data
   } catch (error) {
     console.error(error)
@@ -194,6 +197,11 @@ async function weatharia() {
   });
   document.getElementById("view-all").addEventListener("click", viewAll);
   document.getElementById("view-default").addEventListener("click", viewDefault);
+  document.getElementById("location").addEventListener("keypress", (e) => {
+    if (e.key == "Enter") {
+      document.getElementById("q").click();
+    }
+  })
 }
 
 weatharia();
